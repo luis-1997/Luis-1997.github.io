@@ -1,0 +1,62 @@
+.logo {
+    color: rgb(224, 63, 171);
+    text-shadow: 2px 2px 4px rgb(11, 19, 24);
+    font-size: 50px;
+    margin-right: 950px;
+    list-style-type: none;
+}
+.menuHorizontal{
+    border: 2px solid ;
+    border-color: #53ba83;
+    border-radius: 40px;
+    padding: 20px 0px;
+    background-color:#53ba83;
+}
+.menuHorizontal li {
+    border: 0px solid black;
+    margin: 0px 20px;
+    padding: 5px;
+    border-radius: 20px;
+}
+/**/
+.menuHorizontal {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    /*display: inline;*/
+}
+
+.menuHorizontal li:hover {
+    background-color: #9fd86b;
+}
+.menuHorizontal li a {
+    text-decoration: none;
+    color: black;  
+}
+
+.menuVertical li:hover {
+    background-color: #9fd86b;
+}
+.menuVertical {/**/
+    list-style-type: none;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.menuVertical {
+    
+    padding-top: 10px;
+}
+.menuVertical li {
+    margin-bottom: 10px;
+    background-color: #53ba83;
+    margin-left:-40px;
+    padding: 10px;
+    
+}
+.cat:hover .menuVertical {
+    display: block;
+}
