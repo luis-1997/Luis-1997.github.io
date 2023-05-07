@@ -1,0 +1,176 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+div.divPadre1 {
+    margin: auto;
+    position: relative;
+    width: 90%;
+    /* width: 250px;
+    height: 250px;*/
+}
+
+div.divPadre1 .divHijo1 {
+
+    position: absolute;
+    top: 80px;
+    right: 200px;
+    left: 80px;
+    width: 40%;
+}
+
+div.divPadre1 .divHijo1,
+div.divPadre1 .divHijo22 .titulo,
+p {
+    color: white;
+
+}
+
+div.divPadre1 .divHijo1 p {
+    width: 100%;
+
+}
+
+div.divPadre1 .img1 {
+    width: 100%;
+}
+
+
+/*DIV 2*/
+div.divPadre2 {
+    margin: auto;
+    position: relative;
+
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+div.divPadre2 .divHijo22 {
+
+    position: absolute;
+    width: 50%;
+    top: 40px;
+    margin-right: 20px;
+}
+
+div.divPadre2 .divHijo22 p {
+    margin-top: 70px;
+}
+
+div.divPadre2 .img2 {
+    width: 100%;
+}
+div.divPadre2 h1{
+    color: white;
+}
+/*DIV 3*/
+
+div.divPadre3 {
+    margin: auto;
+    position: relative;
+    width: 90%;
+}
+
+div.divPadre3 .divHijo33 {
+    position: absolute;
+    top: 60px;
+    width: 40%;
+    left: 100px;
+}
+
+div.divPadre3 .divHijo33 h1 {
+    color: white;
+}
+
+div.divPadre3 .divHijo33 h2,
+p {
+    margin-top: 50px;
+}
+
+div.divPadre3 .img3 {
+    width: 100%;
+}
+
+/*DIV 4*/
+div.divPadre4 {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 0px 100px;
+    margin-top: 50px;
+}
+
+div.divPadre4 .divHijo4 {
+    /*Div Video*/
+
+    width: 30%;
+    margin: 0px 20px;
+    height: 30%;
+}
+
+div.divPadre4 .divHijo5 {
+    /*Div Texto*/
+
+    width: 30%;
+    height: 30%;
+    color: white;
+    margin: 0px 20px;
+}
+
+
+div.divPadre4 .divHijo4 .videoEjemplo {
+    width: 100%;
+}
+
+/*DIV 5*/
+div.divPadre5 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+div.divPadre5 .divHijo6 {
+    width: 30%;
+    top: 20px;
+    margin: 0 20px;
+}
+
+div.divPadre5 .divHijo6 h1 {
+    color: white;
+}
+
+div.divPadre5 img {
+    margin: 0 20px;
+    width: 40%;
+    margin-left: 100px;
+}
+
+/*DIV 6*/
+div.divPadre6 {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+
+div.divPadre6 .divHijo {
+    width: 400px;
+    margin: 0px 20px;
+}
+
+div.divPadre6 .divHijo img {
+    width: 400px;
+}
+
+.titulo {
+    color:white;
+    text-align: center;
+}

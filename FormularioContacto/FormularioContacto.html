@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contacto</title>
+
+    <link rel="stylesheet" href="../Estilos/navegacion.css">
+    <link rel="stylesheet" href="../Estilos/formulariContacto.css">
+    <link rel="stylesheet" href="../Estilos/footerEstilo.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navMenu">
+
+            <li class="logo"><a href="../index.html">LOG Informatic</a></li>
+
+            <ul class="menuHorizontal"> <!--creo una Clase para despues hacer css-->
+                <li><a href="../index.html">Inicio</a></li>
+
+                <li class="cat"><a href="#">Tecnologias</a>
+
+                    <ul class="menuVertical"> <!--creo una Clase para despues hacer css-->
+                        <li><a href="../Paginas/Pagina1-Geforce Experience.html">GeForce® Experience™</a></li>
+                        <li><a href="../Paginas/Pagina2-Nvidia G-Sync.html">NVIDIA G-SYNC</a></li>
+                        <li><a href="#">RTX</a></li>
+                        <li><a href="#">DLSS</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Marcas SPONSOR</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Redes</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="FormularioContacto.html">Formulario de Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-------------------------------------------------------------------------------->
+
+    <div class="divPadreFormulario">
+        <h1>Formulario de Contacto</h1>
+        <div class="divForm">
+
+            <form action="">
+
+                <label for="fNombre">Nombre:</label>
+                <input type="text" id="fNombre" name="Fnombre" placeholder="Su Nombre ...">
+
+                <label for="fApellido">Apellido:</label>
+                <input type="text" id="fApellido" name="fApellido">
+
+                <label for="fEmail">Email:</label>
+                <input type="email" name="fEmail" id="fEmail">
+
+
+                <label for="fTelefono">Telefono:</label>
+                <input type="tel" name="fTelefono" id="fTelefono">
+
+                <label for="fMensaje">Mensaje</label>
+                <textarea name="fMensaje" id="" fMensaje cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+        <div class="divHijo">
+
+            <h2>Ubicacion</h2>
+            <p>259 ribadabia 1902</p>
+            <p>Seguinos: </p>
+            <ul class="ubicacion">
+                <li><a href="#"><img src="../img/imgContacto/icono1.png" alt=""></a>Whattsap</li>
+                <li><a href="#"><img src="../img/imgContacto/icono2.png" alt=""></a>Instagram</li>
+                <li><a href="#"><img src="../img/imgContacto/icono3.png" alt=""></a>Twitter</li>
+
+            </ul>
+
+
+        </div>
+    </div>
+
+
+    <!---Footer-->
+
+    <footer> <!--Pie de Pagina-->
+
+
+        <div class="divPadreFooter"> <!---divPadreFooter-->
+            <div class="position">
+                <h1>LOG Informatic</h1>
+            </div>
+            <div class="divHijo1">
+                <h2>Informacion</h2>
+                <ul>
+                    <li><a href="">Informacion Corporativa</a></li>
+                    <li><a href="">Trabajo</a></li>
+                    <li><a href="">Programa de afiliados</a></li>
+                    <li><a href="">Marcas Esponsors</a></li>
+                    <li><a href="">Otras</a></li>
+                </ul>
+            </div>
+
+            <div class="divHijo2">
+                <h2>SEGUINOS</h2>
+                <ul>
+                    <li><a href="#"><img class="imgfooter" src="../img/imgContacto/icono1.png" alt="">Whatsapp</a></li>
+                    <li><a href="#"><img class="imgfooter" src="../img/imgContacto/icono2.png" alt="">Instagram</a></li>
+                    <li><a href="#"><img class="imgfooter" src="../img/imgContacto/icono3.png" alt="">Twitter</a></li>
+                    <li><a href="#"><img class="imgfooter" src="../img/imgContacto/icono4.png" alt="">Facebook</a></li>
+                </ul>
+            </div>
+
+            <div class="divHijo3">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="">Condiguracion de cookies</a></li>
+                    <li><a href="">Mapa de sitio</a></li>
+                    <li><a href="">Terminos y condiciones de uso del sitio</a></li>
+                    <li><a href="">Aviso de privacidad</a></li>
+                    <li><a href="">Politica de privacidad</a></li>
+                    <li><a href="">Sobre LOG Informatic</a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

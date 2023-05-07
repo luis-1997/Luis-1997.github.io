@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/imgContacto/img1.png);
+ 
+  
+}
+
+.divPadreFormulario {
+    /*Contenedor*/
+
+    position: relative;
+    width: 50%;
+    background-color: rgba(37, 153, 118, 0.479);
+    height: 750px;
+    border-radius: 40px;
+    margin: auto;
+
+}
+.divPadreFormulario h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.divForm {
+    position: absolute;
+    border: solid;
+    width: 50%;
+    margin: 20px;
+    padding: 30px;
+    background-color: rgba(37, 153, 118, 0.877);
+    border-radius: 10px;
+    left: 310px;
+}
+
+.divHijo {
+    position: absolute;
+    width: 50%;
+    left: 10px;
+}
+
+
+
+label {
+    font-size: 20px;
+
+}
+
+input[type="text"],
+[type="email"],
+[type="tel"],
+[name="fMensaje"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    /*margin-top: 5px;
+    margin-bottom: 20px;*/
+    border: 2px solid coral;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus,
+[type="email"]:focus,
+[type="tel"]:focus,
+[name="fMensaje"]:focus {
+    border: 2px solid rgb(43, 125, 231);
+}
+
+/*Boton Enviar*/
+input[type=submit] {
+    border: 2px solid rgba(223, 179, 60, 0.932);
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    transition: background-color .9s;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(58, 135, 197, 0.582);
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+/*Iniconos*/
+
+.divHijo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.divHijo li {
+    float: left;
+    /*border: 2px solid rgb(255, 220, 19);*/
+    text-align: center;
+    padding: 10px 10px;
+
+}
+
+.divHijo li a {
+    border: 2px solid rgb(11, 185, 238);
+
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+
+    transition: background-color .3s;
+
+}
+
+
+.divHijo ul li a img {
+    width: 40px;
+
+    box-sizing: border-box;
+
+
+}
+
+.divHijo a:hover {
+    background-color: rgb(11, 79, 83);
+
+}

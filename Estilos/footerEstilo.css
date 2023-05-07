@@ -1,0 +1,160 @@
+ /*Div Hijo 1 Imformacion*/
+ div.divPadreFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+    background-color: rgb(36, 132, 228);
+    border: 2px solid;
+    position: relative;
+
+}
+
+div.divPadreFooter>.divHijo1,
+.divHijo2,
+.divHijo3 {
+    background-color: #f1f1f1;
+    /*margin: 10px;
+   padding: 20px;*/
+    margin-top: 100px;
+
+}
+
+
+div.position {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*border: 2px solid;*/
+}
+
+div.divPadreFooter h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+div.divPadreFooter h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.divPadreFooter .divHijo1 {
+    /*border: 2px solid;*/
+    width: 25%;
+}
+
+div.divPadreFooter .divHijo1 a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+}
+
+div.divPadreFooter .divHijo1 a:hover {
+    text-decoration: underline;
+    color: rgb(22, 150, 10);
+}
+
+div.divPadreFooter .divHijo1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    width: 350px;
+}
+
+div.divPadreFooter .divHijo1 li {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Div Hijo 2 Seguinos*/
+div.divPadreFooter .divHijo2 {
+    /* border: 2px solid rgb(10, 9, 0);*/
+    width: 25%;
+}
+
+div.divPadreFooter .divHijo2 img {
+    width: 30px;
+    /* border: 2px solid green;*/
+    margin-right: 10px;
+    border-radius: 10px;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+div.divPadreFooter .divHijo2 a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+div.divPadreFooter .divHijo2 a:hover .imgfooter {
+    background-color: rgba(196, 99, 9, 0.685);
+    border-radius: 15px;
+}
+
+div.divPadreFooter .divHijo2 ul {
+    /*border: 2px solid red;*/
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+div.divPadreFooter .divHijo2 li {
+    /* border: 2px solid rgb(44, 11, 236);*/
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+/*Div Hijo 3 Links*/
+
+div.divPadreFooter .divHijo3 {
+    /*border: 2px solid black;*/
+    width: 25%;
+}
+
+div.divPadreFooter .divHijo3 a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+}
+
+div.divPadreFooter .divHijo3 a:hover {
+    text-decoration: underline;
+    color: rgba(238, 165, 7, 0.842);
+}
+
+div.divPadreFooter .divHijo3 ul {
+    /*border: 2px solid rgb(240, 18, 10);*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    width: 350px;
+}
+
+div.divPadreFooter .divHijo3 li {
+    /*border: 2px solid rgb(13, 36, 240);*/
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
