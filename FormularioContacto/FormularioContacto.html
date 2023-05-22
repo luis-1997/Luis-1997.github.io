@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../Estilos/navegacion.css">
     <link rel="stylesheet" href="../Estilos/formulariContacto.css">
     <link rel="stylesheet" href="../Estilos/footerEstilo.css">
-
+    <script src="../JS/ValidacionFormulario.js"></script>
 </head>
 
 <body>
@@ -50,25 +50,45 @@
         <h1>Formulario de Contacto</h1>
         <div class="divForm">
 
-            <form action="">
+            <form action="" method="get" name="datos" onsubmit="return validarformulario()">
 
                 <label for="fNombre">Nombre:</label>
-                <input type="text" id="fNombre" name="Fnombre" placeholder="Su Nombre ...">
+                <input type="text" id="fNombre" name="fNombre" placeholder="Nombre...">
+
+                <div id="divNombre">
+                </div>
 
                 <label for="fApellido">Apellido:</label>
-                <input type="text" id="fApellido" name="fApellido">
+                <input type="text" id="fApellido" name="fApellido" placeholder="Apellido ...">
+
+                <div id="divApellido">
+                </div>
 
                 <label for="fEmail">Email:</label>
-                <input type="email" name="fEmail" id="fEmail">
+                <input type="text" name="fEmail" id="fEmail" placeholder="Email...">
+
+                <div id="divEmail">
+                </div>
 
 
                 <label for="fTelefono">Telefono:</label>
-                <input type="tel" name="fTelefono" id="fTelefono">
+                <input type="text" name="fTelefono" id="fTelefono" placeholder="Numero telefono...">
+                <div id="divTelefono">
+                </div>
+
 
                 <label for="fMensaje">Mensaje</label>
                 <textarea name="fMensaje" id="" fMensaje cols="30" rows="10"></textarea>
 
+                <label for="fCondiciones">Terminos y Condiciones</label>
+                <input type="checkbox" name="fCondiciones" id="fCondiciones">
+                <div id="divCondiciones">
+                </div>
+
                 <input type="submit" value="Enviar">
+                <div id="divEnvioExitoso">
+
+                </div>
 
             </form>
         </div>
@@ -137,6 +157,90 @@
 
 
     </footer>
+
+    <script>
+        let divNombre = document.getElementById("divNombre");
+        let divApellido = document.getElementById("divApellido")
+        let divEmail = document.getElementById("divEmail");
+        let divTelefono = document.getElementById("divTelefono");
+        let divCondiciones = document.getElementById("divCondiciones")
+        //-------------Error casilla nombre vacia y minimo de 4 caracteres-----------------
+
+        const error = document.createElement("p");
+        let textoError1 = "Error ingrese nombre, con un minimo de 3 caracteres.";
+        divNombre.appendChild(error);
+        error.innerHTML = textoError1;
+        error.style.color = "#ec0909";
+        error.style.display = "none";
+
+        //----------Error casilla nombre letras-----------------
+        const error2 = document.createElement("p");
+        let textoError2 = "Error, se aceptan solo letras.";
+        divNombre.appendChild(error2);
+        error2.innerHTML = textoError2;
+        error2.style.color = "#ec0909";
+        error2.style.display = "none";
+
+        //-------------Error casilla apellido vacia y minimo de 4 caracteres-----------------
+        const error3 = document.createElement("p");
+        let textoError3 = "Error ingrese apellido, con un minimo de 3 caracteres.";
+        divApellido.appendChild(error3);
+        error3.innerHTML = textoError3;
+        error3.style.color = "#ec0909";
+        error3.style.display = "none";
+
+        //----------Error casilla apellido letras Valido-----------------
+        const error4 = document.createElement("p");
+        let textoError4 = "Erorr, se aceptan solo letras";
+        divApellido.appendChild(error4);
+        error4.innerHTML = textoError4;
+        error4.style.color = "#ec0909";
+        error4.style.display = "none";
+
+        //----------Error casilla Email Vacio-----------------
+
+        const error5 = document.createElement("p");
+        let textoError5 = "Ingrese Email ";
+        divEmail.appendChild(error5);
+        error5.innerHTML = textoError5;
+        error5.style.color = "#ec0909";
+        error5.style.display = "none";
+
+        //----------Error casilla Email Valido-----------------
+        const error6 = document.createElement("p");
+        let textoError6 = "Ingrese Email Valido"
+        divEmail.appendChild(error6);
+        error6.innerHTML = textoError6;
+        error6.style.color = "#ec0909";
+        error6.style.display = "none";
+
+        //----------Error casilla Telefono Vacia-----------------
+
+        const error7 = document.createElement("p");
+        let textoError7 = "Ingrese Numero de telefono"
+        divTelefono.appendChild(error7);
+        error7.innerHTML = textoError7;
+        error7.style.color = "#ec0909";
+        error7.style.display = "none";
+        //----------Error casilla Telefono Valido-----------------
+        const error8 = document.createElement("p");
+        let textoError8 = "Ingrese Numero de telefono"
+        divTelefono.appendChild(error8);
+        error8.innerHTML = textoError8;
+        error8.style.color = "#ec0909";
+        error8.style.display = "none";
+
+        //----------Error casilla Terminos y condiciones -----------------
+
+        const error9 = document.createElement("p");
+        let textoError9 = "Acepte las Condiciones"
+        divCondiciones.appendChild(error9);
+        error9.innerHTML = textoError9;
+        error9.style.color = "#ec0909";
+        error9.style.display = "none";
+
+
+    </script>
 
 
 

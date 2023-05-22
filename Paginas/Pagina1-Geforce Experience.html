@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="../Estilos/navegacion.css">
     <link rel="stylesheet" href="../Estilos/pagina1Estilo.css">
     <link rel="stylesheet" href="../Estilos/footerEstilo.css">
-
-
+    
 </head>
 
 <body>
@@ -117,8 +116,8 @@
     <!----DIV 4-->
     <div class="divPadre4">
         <div class="divHijo4">
-            <video class="videoEjemplo" autoplay muted>
-                <source src="../img/imgPagina1,2/video1.webm" type="video/mp4">
+            <video class="videoEjemplo" id="videoMuestra" muted>
+                <source src="../img/imgPagina1,2/video1.mp4" type="video/mp4">
             </video>
         </div>
         <div class="divHijo5">
@@ -250,8 +249,14 @@
 
     </footer>
 
+    <script>
+        var video = document.getElementById("videoMuestra");
+        function playVideo() {
+            video.play();
+        }
+        setInterval("playVideo()");
 
-
+    </script>
 </body>
 
 </html>

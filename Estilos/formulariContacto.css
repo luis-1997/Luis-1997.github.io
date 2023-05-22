@@ -34,8 +34,9 @@ body {
 
 .divHijo {
     position: absolute;
-    width: 50%;
+    width: 40%;
     left: 10px;
+  
 }
 
 
@@ -131,6 +132,6 @@ input[type=submit]:hover {
 }
 
 .divHijo a:hover {
-    background-color: rgb(11, 79, 83);
-
+    /*background-color: rgb(11, 79, 83);*/
+    background-color: rgb(201, 123, 6);
 }
