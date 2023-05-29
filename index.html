@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="Estilos/section2.css">
     <link rel="stylesheet" type="text/css" href="Estilos/section3.css">
     <link rel="stylesheet" type="text/css" href="Estilos/footerEstilo.css">
-
+    <script src="JS/galeria.js"></script>
 
 </head>
 
@@ -60,7 +60,15 @@
                 <div class="divImagenes">
                     <img class="img1" src="img/imgGaleria/img1.png" alt="img1" id="cambiarImg">
                 </div>
+                <div class="divFlechas">
+                    <div class="divAtras">
+                        <input type="button" id="siguiente" value="❮" onclick="atras()">
+                    </div>
 
+                    <div class="divAdelante">
+                        <input type="button" id="Atras" value="❯" onclick="adelante()">
+                    </div>
+                </div>
 
 
             </figure>
@@ -235,6 +243,7 @@
 
 
     <script>
+        /*
         const listaImagenes = [];
         listaImagenes[0] = 'img/imgGaleria/img1.png'
         listaImagenes[1] = 'img/imgGaleria/img2.png'
@@ -256,7 +265,7 @@
             }
         }
         setInterval("galeria()", 5000)
-        
+        */
     </script>
 
 

@@ -106,9 +106,12 @@
 
 
         </div>
+        <div id="datosFormulario">
+
+        </div>
+    
     </div>
-
-
+    
     <!---Footer-->
 
     <footer> <!--Pie de Pagina-->
@@ -239,6 +242,15 @@
         error9.style.color = "#ec0909";
         error9.style.display = "none";
 
+        //---------Datos Enviados Correctamente -----------------
+
+        const verificado = document.createElement("p");
+        let textoSinError = "Enviado Exitoso"
+        divEnvioExitoso.appendChild(verificado);
+        verificado.innerHTML = textoSinError;
+        verificado.style.color = "#00ff00";
+        verificado.style.fontSize = "30px";
+        verificado.style.display = "none";
 
     </script>
 
